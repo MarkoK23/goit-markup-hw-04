@@ -177,16 +177,17 @@ margin-right: 0;
 .contacts .contacts-list:hover,
 .contacts .contacts-list:focus {
   color: var(--accent-color);
+  /* fill: #2196f3; */
 }
 .icon-contacts {
-  fill: var(--text-color);
+  fill: currentColor;
   margin-right: 10px;
   text-align: center;
 }
-.icon-contacts:hover,
-.icon-contacts:focus {
-  fill: var(--accent-color);
-}
+  /* .icon-contacts:hover,
+  .icon-contacts:focus {
+    fill: var(--accent-color);
+  } */
 
 /* ----------------MAIN--------------- */
 
@@ -336,15 +337,17 @@ margin-right: 0;
 /* ----------TEAM SOC MEDIA -------------------*/
 .team-soc-media {
   display: flex;
+ 
 }
 .soc-media-content {
   padding: 16px 32px 30px;
 }
 
-.team-soc-media > .item-soc {
+.team-soc-media  .link {
   width: 44px;
   height: 44px;
   margin-right: 10px;
+  color: #757575;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -352,20 +355,19 @@ margin-right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .team-soc-media > .item-soc:last-child {
   margin-right: 0;
 }
-.team-soc-media .icon-soc-media {
-  fill: #afb1b8;
+.icon-soc-media{
+  fill: currentColor;
 }
-.team-soc-media .icon-soc-media:hover,
-.team-soc-media .icon-soc-media:focus{
-  fill: #ffffff;
-}
-.team-soc-media > .item-soc:hover,
-.team-soc-media > .item-soc:focus  {
-  background-color: var(--button-bkg-color);
+
+.team-soc-media  .link:hover,
+.team-soc-media  .link:focus  {
+  background-color: var(--button-bkg-color);  
+  color: #ffffff;
 }
 
 /* ----------------PARTNERS---------------- */
@@ -546,7 +548,6 @@ margin-right: 0;
 }
 .projects .item {
   flex-basis: calc(100% / 3 - 30px);
-  box-sizing: border-box;
   margin-right: 30px;
   margin-bottom: 30px;
 }
