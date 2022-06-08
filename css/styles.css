@@ -11,6 +11,7 @@ body {
   --button-bkg-color: #2196f3;
   --hero-bcg-color: #2f303a;
   --hero-border-bottom: #ececec;
+  --social-media-color: #afb1b8;
   --section-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -19,9 +20,6 @@ img {
   display: block;
   max-width: 100%;
 }
-a{
-  display: block;b;
-}
 
 h1,
 h2,
@@ -29,6 +27,9 @@ h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+a {
+  display: block;
 }
 
 header {
@@ -172,7 +173,6 @@ header {
   /* fill: #2196f3; */
 }
 
-
 /* ----------------MAIN--------------- */
 
 /* ----------------HERO SECTION--------------- */
@@ -215,13 +215,12 @@ header {
   cursor: pointer;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
-
 
 /* ----------------BENEFITS--------------- */
 
@@ -328,25 +327,22 @@ border-radius: 4px;
 /* ----------TEAM SOCIAL MEDIA -------------------*/
 .team-soc-media {
   display: flex;
-  justify-content:center;
- 
+  justify-content: center;
 }
 
-
- .social-link {
+.social-link {
   width: 44px;
   height: 44px;
-  color: var(--text-color);
+  color: var(--social-media-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.team-soc-media .item-soc{
+.team-soc-media .item-soc {
   margin-right: 10px;
 }
-.team-soc-media  .item-soc:last-child {
+.team-soc-media .item-soc:last-child {
   margin-right: 0;
 }
 .icon-social {
@@ -356,13 +352,13 @@ border-radius: 4px;
   color: currentColor;
 } */
 
-.team-soc-media  .social-link:hover,
-.team-soc-media  .social-link:focus  {
-  background-color: var(--button-bkg-color);  
+.team-soc-media .social-link:hover,
+.team-soc-media .social-link:focus {
+  background-color: var(--button-bkg-color);
   color: #ffffff;
 }
 
-/* ----------------clients---------------- */
+/* ---------------- CLIENTS ---------------- */
 .clients-list {
   display: flex;
   justify-content: space-between;
@@ -375,20 +371,17 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
+  color: var(--social-media-color);
 }
-.icon-clients{
+.icon-clients {
   fill: currentColor;
 }
-
-
 
 .clients-link:hover,
 .clients-link:focus {
   color: var(--button-bkg-color);
   border: 1px solid var(--button-bkg-color);
 }
-
 
 /* ----------------FOOTER--------------- */
 .footer {
@@ -467,8 +460,8 @@ border-radius: 4px;
   margin-right: 0;
 }
 
-.footer-list .link{
-   width: 44px;
+.footer-list .link {
+  width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -477,15 +470,14 @@ border-radius: 4px;
   align-items: center;
   color: #fff;
 }
-  .footer-list .icon-social {
-    fill: currentColor;
-  }
-
-.footer-list  .link:hover,
-.footer-list  .link:focus {
-  background-color: var(--accent-color);
+.footer-list .icon-social {
+  fill: currentColor;
 }
 
+.footer-list .link:hover,
+.footer-list .link:focus {
+  background-color: var(--accent-color);
+}
 
 /* ----------------PORTFOLIO--------------- */
 
@@ -563,13 +555,11 @@ border-radius: 4px;
   font-size: 16px;
   line-height: 1.88;
 }
+/* .projects .decoration {
+  display: block;
+} */
 .projects .decoration:hover,
 .projects .decoration:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    
 }
-
-
-
-
